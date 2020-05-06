@@ -3,7 +3,7 @@
     padding: 0px auto;
 }
 .row-content {
-    margin:0px auto;
+    margin:0px;
     padding: 50px 0px 50px 0px;
     border-bottom: 1px ridge;
     min-height:400px;
@@ -21,8 +21,9 @@
     color:floralwhite;
 }
 
-address{
+.address{
     font-size:80%;
     margin:0px;
     color:#0f0f0f;
 }
+
