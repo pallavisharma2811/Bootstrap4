@@ -35,6 +35,8 @@
         </div>    
     </div>
 </nav>
+
+<!--Modal at the top of body-->
 <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
         <!-- Modal content-->
@@ -72,6 +74,79 @@
     </div>
 </div>
 
+<div id="reserveform" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Reserve a Table </h4>
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label class="col-12 col-sm-2 col-form-label" >Number of Guests </label>
+                        <div class="col-12 col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="option1" id="option1" autocomplete="off">
+                                <label class="form-check-label" for="option1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="option2" id="option2" autocomplete="off">
+                                <label class="form-check-label" for="option2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="option3" id="option3" autocomplete="off">
+                                <label class="form-check-label" for="option3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="option4" id="option4" autocomplete="off">
+                                <label class="form-check-label" for="option4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="option5" id="option5" autocomplete="off">
+                                <label class="form-check-label" for="option5">5</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="option6" id="option6" autocomplete="off">
+                                <label class="form-check-label" for="option6">6</label>
+                            </div>
+                        </div>   
+                    </div>  
+                    <div class="form-group row">
+                        <label class="col-12 col-sm-2 col-form-label">Section</label>
+                        <div class="btn-group col-12 col-sm-8 btn-group-toggle"  role="group" data-toggle="buttons">
+                            <label class="btn btn-secondary btn-success active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                              </label>
+                              <label class="btn btn-secondary btn-danger">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                              </label>
+                            </label> 
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12 col-sm-2 col-form-label">Date and Time</label>
+                        <div class="col-12 col-sm-3">
+                            <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                        </div>
+                        <div class="col-12 col-sm-3">
+                            <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                        </div> 
+                    </div>  
+                    <div class="form-group row">
+                        <div class="col-12 offset-sm-2">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        </div>
+                    </div>
+                </form>
+            </div>        
+        </div>    
+    </div>
+</div>
 <body>
 
     <header class="jumbotron">
@@ -86,8 +161,7 @@
                 </div>
                 <div class="col-12 col-sm-3 align-items-center">    
                     <a role="button" class="btn btn-block nav-link btn-warning"
-                        data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
-                        data-placement="bottom" href="#reserveform">Reserve Table
+                        data-toggle="modal" data-target="#reserveform"><strong>Reserve Table</strong>
                     </a>
                 </div>
             </div>
@@ -205,64 +279,8 @@
                 </div>
             </div>
         </div>
-        <a name="reserveform">
-            <div class="row row-content align-items-center">
-                <div class="col-12 col-sm-8 offset-sm-2">
-                    <div class="card">
-                        <h3 class="card card-header text-white bg-warning">Reserve a Table</h3>
-                        <div class="card-body">
-                            <form>
-                                
-                                <div class="form-group row">
-                                    <label class="col-12 col-sm-2 col-form-label" >Number of Guests </label>
-                                    <div class="col-12 col-sm-9">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="option1" id="option1" autocomplete="off">
-                                            <label class="form-check-label" for="option1">1</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="option2" id="option2" autocomplete="off">
-                                            <label class="form-check-label" for="option2">2</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="option3" id="option3" autocomplete="off">
-                                            <label class="form-check-label" for="option3">3</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="option4" id="option4" autocomplete="off">
-                                            <label class="form-check-label" for="option4">4</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="option5" id="option5" autocomplete="off">
-                                            <label class="form-check-label" for="option5">5</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="option6" id="option6" autocomplete="off">
-                                            <label class="form-check-label" for="option6">6</label>
-                                        </div>
-                                    </div>   
-                                </div>    
-                                <div class="form-group row">
-                                    <label class="col-12 col-sm-2 col-form-label">Date and Time</label>
-                                    <div class="col-12 col-sm-3">
-                                        <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Date">
-                                    </div>
-                                    <div class="col-12 col-sm-3">
-                                        <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Time">
-                                    </div> 
-                                </div>  
-                                <div class="form-group row">
-                                    <div class="col-12 offset-sm-2">
-                                        <button type="submit" class="btn btn-primary">Reserve</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>        
-                    </div>
-                </div>
-            </div>
-        </a>
-    </div>
+    </div>   
+
 
     <footer class="footer">
         <div class="container">
@@ -309,12 +327,6 @@
      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-     <!--  this is specifying that wherever there is an attribute of this kind for that particular HTML tag, turn on the tooltip. -->
-     <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
 </body>
 
 </html>
